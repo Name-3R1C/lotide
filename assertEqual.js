@@ -1,7 +1,13 @@
 const assertEqual = function(actual, expected) {
+  // Emoji
   let correct = String.fromCodePoint(0x2705) + String.fromCodePoint(0x2705) + String.fromCodePoint(0x2705);
   let wrong = String.fromCodePoint(0x274C) + String.fromCodePoint(0x274C) + String.fromCodePoint(0x274C);
-  console.log(actual === expected ? correct + "Assertion Passed: " + actual + " === " + expected :  wrong + "Assertion Failed: " + actual + " !== " + expected);
+  let ans = (actual === expected);
+  if(ans) {
+    console.log(`${correct} Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`${wrong} Assertion Failed: ${actual} !== ${expected}`);
+  }
 };
 
 assertEqual("Lighthouse Labs", "Bootcamp");
