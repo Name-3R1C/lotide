@@ -12,13 +12,11 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const assertArraysEqual = function(firstArr, secArr) {
-  let correct = String.fromCodePoint(0x2705) + String.fromCodePoint(0x2705) + String.fromCodePoint(0x2705);
-  let wrong = String.fromCodePoint(0x274C) + String.fromCodePoint(0x274C) + String.fromCodePoint(0x274C);
-  let ans = eqArrays(firstArr, secArr);
+  const ans = eqArrays(firstArr, secArr);
   if (ans) {
-    console.log(`${correct} Assertion Passed: ${firstArr} === ${secArr}`);
+    console.log(`✅✅✅ Assertion Passed: ${firstArr} === ${secArr}`);
   } else {
-    console.log(`${wrong} Assertion Failed: ${firstArr} !== ${secArr}`);
+    console.log(`🛑🛑🛑 Assertion Failed: ${firstArr} !== ${secArr}`);
   }
 };
 
