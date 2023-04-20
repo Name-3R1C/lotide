@@ -1,5 +1,6 @@
 const eqArrays = require('./eqArrays');
 
+// Compare two objects
 const eqObjects = function(object1, object2) {
   // Compare length of both objects
   if (Object.keys(object1).length !== Object.keys(object2).length) {
@@ -31,17 +32,3 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 module.exports = assertObjectsEqual;
-
-// const shirtObject = { color: "red", size: "medium" };
-// const anotherShirtObject = { size: "medium", color: "red" };
-// assertObjectsEqual(shirtObject, anotherShirtObject); // => true
-
-// const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-// assertObjectsEqual(longSleeveShirtObject, anotherShirtObject); // => false
-
-// const multiColorShirtObject = {colors: ["red", "blue"], size: "medium"};
-// const anotherMultiColorShirtObject = {size: "medium", colors: ["red", "blue"]};
-// assertObjectsEqual(multiColorShirtObject, anotherMultiColorShirtObject); // => ture
-
-// const longSleeveMultiColorShirtObject = {size: "medium", colors: ["red", "blue"], sleeveLength: "long"};
-// assertObjectsEqual(longSleeveMultiColorShirtObject, anotherShirtObject); // => false

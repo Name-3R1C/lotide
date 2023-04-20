@@ -1,5 +1,7 @@
 const assertEqual = require('./assertEqual');
 
+// Given an object, return the first key which contains the given value, 
+// return undefined if not found
 const findKeyByValue = function(object, value) {
   for (const item in object) {
     if (object[item] === value) {
@@ -10,15 +12,3 @@ const findKeyByValue = function(object, value) {
 };
 
 module.exports = findKeyByValue;
-
-// const bestTVShowsByGenre = {
-//   // eslint-disable-next-line camelcase
-//   sci_fi: "The Expanse",
-//   comedy: "Brooklyn Nine-Nine",
-//   drama:  "The Wire"
-// };
-
-// console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
-// console.log(findKeyByValue(bestTVShowsByGenre, "That '70s Show"));
-// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);

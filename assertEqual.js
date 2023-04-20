@@ -1,3 +1,4 @@
+// Assertion on primitive type
 const assertEqual = function(actual, expected) {
   let ans = (actual === expected);
   if (ans) {

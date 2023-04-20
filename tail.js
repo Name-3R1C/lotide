@@ -1,5 +1,6 @@
 const assertEqual = require('./assertEqual');
 
+// Return all item in except the head of a given array
 const tail = function(arr) {
   if (arr.length <= 1) {
     return [];

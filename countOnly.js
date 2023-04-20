@@ -1,5 +1,6 @@
 const assertEqual = require('./assertEqual');
 
+// Given a list of item, return counts for a specific subset of those items
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 const countOnly = function(allItems, itemsToCount) {
@@ -20,22 +21,3 @@ const countOnly = function(allItems, itemsToCount) {
 };
 
 module.exports = countOnly;
-
-// const firstName = [
-//   "Karl",
-//   "Salima",
-//   "Agouhanna",
-//   "Fang",
-//   "Kavith",
-//   "Jason",
-//   "Salima",
-//   "Fang",
-//   "Joe",
-// ];
-
-// const result1 = countOnly(firstName, {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false});
-
-// assertEqual(result1["Jason"], 1);
-// assertEqual(result1["Karima"], undefined);
-// assertEqual(result1["Fang"], 2);
-// assertEqual(result1["Agouhanna"], undefined);
